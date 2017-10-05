@@ -3,7 +3,14 @@ import * as types from '../constants/ActionTypes'
 
 
 const products = (state, action) => {
-  return state
+  switch (action.type) {
+    case types.ADD_TO_CART:
+      return {
+        ...state
+      }
+    default:
+      return state
+  }
 }
 
 
